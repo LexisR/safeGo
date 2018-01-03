@@ -34,7 +34,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Seguimiento de envío</a></li>
             <li><a href="#">Log-In</a></li>
-            <li><a href="#">Registro</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -42,13 +42,87 @@
   </header>
 <!-- creando seccion cuerpo-->
   <section>
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid modal-1">
+      <div class="row div-imagen">
         <div class="col-md-6 picture-1">
-          <p>Mudanza</p>
+          <p>
+            <button type="button" class="btn btn-primary btn-principal" data-toggle="modal" data-target="#registrar" type="submit">Quiero hacer un envio</button>
+          </p>
+        </div>
+        <!--creando modal registrar-->
+        <div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content registrar-1">
+              <div class="modal-header linea-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body text-center">
+                <button type="button" class="btn btn-primary btn-1  cuenta">¿Ya tienes una cuenta?</button>
+                <p class="text-cuenta">¡Registrate y despreocupate de tus envios!</p>
+                <img src="assets/img/safe.png" id="img-logo">
+                <div class="input-group input-text">
+                  <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
+                </div>
+                <div class="input-group input-text">
+                  <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
+                </div>
+                <div class="input-group input-text">
+                  <input type="text" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2">
+                </div>
+                <div class="input-group input-text">
+                  <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
+                </div>
+                <div class="input-group input-text">
+                  <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                </div>
+                <div class="input-group input-text" >
+                  <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary enviar btn-2">REGISTRAR</button>
+            </div>
+          </div>
         </div>
         <div class="col-md-6 picture-2">
-          <p></p>
+            <p>
+                <button type="button" class="btn btn-primary btn-principal btn-3" data-toggle="modal" data-target="#registrarConductor" type="submit">Quiero ser conductor</button>
+              </p>
+            </div>
+            <!--creando modal registrar-->
+            <div class="modal fade" id="registrarConductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content registrar-1">
+                  <div class="modal-header linea-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <button type="button" class="btn btn-primary btn-1  cuenta">¿Ya tienes una cuenta?</button>
+                    <p class="text-cuenta">¡Registrate y se parte de una gran empres!</p>
+                    <img src="assets/img/safe.png" id="img-logo">
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="input-group input-text">
+                      <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-primary enviar btn-2">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+       
         </div>
       </div>
      </div>

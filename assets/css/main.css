@@ -4,8 +4,68 @@
   background-repeat: no-repeat;
   height: 40em;
 }
+
+.picture-1:hover {
+  filter: opacity(.4);
+}
+
+.picture-2:hover {
+  filter: opacity(.4);
+}
+
+.btn-principal {
+  color: #fff;
+  background: #000;
+  border-color: rgb(238, 250, 5);
+  text-align: center;
+  margin-top: 35em;
+  margin-left: 20em;
+}
+
+.btn-principal:hover {
+  color: #000;
+  background-color:rgb(234, 240, 46);
+
+}
+
+#first-modal {
+ 
+}
+
+#img-logo {
+  width: 5em;
+  margin-right: 36em;
+  margin-top: -16em;
+}
+
+.btn-1 {
+  color: #fff;
+  background: #000;
+  border-color: rgb(238, 250, 5);
+  text-align: center;
+}
+
+.btn-2 {
+  color: #fff;
+  background: #000;
+  border-color: rgb(238, 250, 5);
+  text-align: center;
+  margin-left: 19em;
+  margin-bottom: 1em
+}
+
+.btn-3 {
+  color: #fff;
+  background: #000;
+  border-color: rgb(238, 250, 5);
+  text-align: center;
+  margin-left: 19em;
+  margin-bottom: 1em
+}
+
+
 .picture-2{
-background-image: url(../../assets/img/transportista.jpg);
+background-image: url(../../assets/img/img-3.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 height: 40em;
