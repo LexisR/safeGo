@@ -1,0 +1,12 @@
+.picture-1{
+    background-image: url(../../assets/img/mudanza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+}
+.picture-2{
+  background-image: url(../../assets/img/transportista.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 41em;
+}
