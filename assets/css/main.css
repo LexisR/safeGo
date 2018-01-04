@@ -29,7 +29,7 @@
 }
 
 #first-modal {
- 
+
 }
 
 #img-logo {
@@ -43,15 +43,6 @@
   background: #000;
   border-color: rgb(238, 250, 5);
   text-align: center;
-}
-
-.btn-2 {
-  color: #fff;
-  background: #000;
-  border-color: rgb(238, 250, 5);
-  text-align: center;
-  margin-left: 19em;
-  margin-bottom: 1em
 }
 
 .btn-4 {
@@ -69,4 +60,62 @@ background-image: url(../../assets/img/img-3.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 height: 40em;
+}
+.fondo{
+  background-color: #D3D3D3;
+}
+.user-datos{
+ width: 30em;
+ margin-left: 6em;
+ margin-top: 0.5em;
+}
+.user{
+  color: #3CB371;
+  font-size:12em;
+  margin-left: 1.1em;
+}
+.btn-presionar{
+  color:white;
+  background-color: black;
+  width: 30em;
+  margin-left: 6em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.btn-registar{
+  color:white;
+  background-color: black;
+  width: 30em;
+  margin-left: 7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.forgot{
+  text-align: center;
+  margin-top: 1em;
+}
+.click{
+  color: red;
+}
+.input-text{
+  width: 30em;
+  margin-left: 6em;
+  margin-top: 0.5em;
+}
+.fa-truck{
+  font-size: 6em;
+  margin-left: 5em;
+}
+.input-contacto{
+  width: 30em;
+  margin-left: 6em;
+}
+.modal-title{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.contacto-2{
+  text-align: center;
+  margin-bottom: 1em;
+
 }

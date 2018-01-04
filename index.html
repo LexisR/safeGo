@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,8 +33,8 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Seguimiento de envío</a></li>
-            <li><a href="#">Log-In</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#log-in">Log-In</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#contacto">Contacto</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -49,16 +49,17 @@
             <button type="button" class="btn btn-primary btn-principal" data-toggle="modal" data-target="#registrar" type="submit">Quiero hacer un envio</button>
           </p>
         </div>
-        <!--creando modal registrar-->
+        <!--creando modal registrar para hacer envios-->
         <div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
-            <div class="modal-content registrar-1">
+            <div class="modal-content">
               <div class="modal-header linea-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
-              <div class="modal-body text-center">
-                <button type="button" class="btn btn-primary btn-1  cuenta">¿Ya tienes una cuenta?</button>
-                <p class="text-cuenta">¡Registrate y despreocupate de tus envios!</p>
+
+              <div class="modal-body ">
+                <button type="button" class="btn btn-presionar">¿Ya tienes una cuenta?</button>
+                <p class="text-cuenta text-center">¡Registrate y despreocupate de tus envios!</p>
                 <img src="assets/img/safe.png" id="img-logo">
                 <div class="input-group input-text">
                   <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
@@ -79,7 +80,7 @@
                   <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
                 </div>
               </div>
-              <button type="button" class="btn btn-primary enviar btn-2">REGISTRAR</button>
+              <button type="button" class="btn btn-registar">REGISTRAR</button>
             </div>
           </div>
         </div>
@@ -88,7 +89,7 @@
             <button type="button" class="btn btn-primary btn-principal btn-3" data-toggle="modal" data-target="#registrarConductor" type="submit">Quiero ser conductor</button>
           </p>
         </div>
-        <!--creando modal registrar-->
+        <!--creando modal registrar para ser conductor-->
         <div class="modal fade" id="registrarConductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content registrar-1">
@@ -96,7 +97,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body text-center">
-                <button type="button" class="btn btn-primary btn-1  cuenta">¿Ya tienes una cuenta?</button>
+                <button type="button" class="btn btn-presionar">¿Ya tienes una cuenta?</button>
                 <p class="text-cuenta">¡Registrate y se parte de una gran empres!</p>
                 <img src="assets/img/safe.png" id="img-logo">
                 <div class="input-group input-text">
@@ -118,13 +119,82 @@
                   <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
                 </div>
               </div>
-              <button type="button" class="btn btn-primary enviar btn-2">ENVIAR</button>
+              <button type="button" class="btn btn-registar">ENVIAR</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+
+       <!-- creando modal para log in-->
+       <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content fondo">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <i class="fa fa-user-circle-o user" aria-hidden="true"></i>
+             </div>
+             <div class="modal-body">
+               <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                 <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+               </div>
+
+               <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                 <input type="text" class="form-control " placeholder="Password" aria-describedby="sizing-addon2">
+               </div>
+
+               <button type="button" class="btn btn-presionar">LOGING</button>
+               <p class="forgot">Forgot password? <span class="click">Click Here</span></p>
+             </div>
+
+           </div>
+         </div>
+         </div>
+
+           <!--creando modal para contacto-->
+           <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <h2 class="modal-title" id="myModalLabel">Contáctanos</h2> <i class="fa fa-truck" aria-hidden="true"></i>
+                 </div>
+                 <div class="modal-body">
+                   <form>
+                     <div class="form-group">
+                       <label class="input-contacto" for="exampleInputEmail1">Nombre:</label>
+                       <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+
+
+                     <label class="input-contacto" for="exampleInputEmail1">Correo Electrónico:</label>
+                     <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+
+                     <label class="input-contacto" for="exampleInputEmail1">Teléfono:</label>
+                     <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                   </div>
+
+                   <textarea class="form-control input-contacto" rows="3" placeholder="Mensaje:"></textarea>
+                   </div>
+
+
+
+                 <button type="button" class="btn btn-registar">ENVIAR</button>
+
+                 <h4 class="contacto-2">¡Nos pondremos en contácto contigo!</h4>
+                 </div>
+                 <form>
+
+
+
+
+
+                 </div>
+
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
   <script src="assets/js/app.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
