@@ -12,7 +12,7 @@
 </head>
 <body>
   <!--creando header-->
-  <header>
+  <header class="section-principal">
     <nav class="navbar navbar-default navbar-inverse">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,7 +41,7 @@
     </nav>
   </header>
   <!-- creando seccion cuerpo-->
-  <section>
+  <section class="section-principal">
     <div class="container-fluid modal-1">
       <div class="row div-imagen">
         <div class="col-md-6 picture-1">
@@ -56,10 +56,9 @@
               <div class="modal-header linea-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
-
-              <div class="modal-body ">
-                <button type="button" class="btn btn-presionar">¿Ya tienes una cuenta?</button>
-                <p class="text-cuenta text-center">¡Registrate y despreocupate de tus envios!</p>
+              <div class="modal-body text-center">
+                <button type="button" class="btn btn-primary btn-1  cuenta" >¿Ya tienes una cuenta?</button>
+                <p class="text-cuenta">¡Registrate y despreocupate de tus envios!</p>
                 <img src="assets/img/safe.png" id="img-logo">
                 <div class="input-group input-text">
                   <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
@@ -68,19 +67,20 @@
                   <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
                 </div>
                 <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2">
+                  <input type="email" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2" id="txtEmail">
                 </div>
                 <div class="input-group input-text">
                   <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
                 </div>
                 <div class="input-group input-text">
-                  <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                  <input type="password" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2" id="txtPassword">
                 </div>
                 <div class="input-group input-text" >
                   <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
                 </div>
               </div>
-              <button type="button" class="btn btn-registar">REGISTRAR</button>
+              <button type="button" class="btn btn-action enviar btn-2" id="btnSignUp">Registrame</button>
+              <button type="button" class="btn btn-action enviar btn-2" id="btnLogin">Ingresar</button>
             </div>
           </div>
         </div>
@@ -195,6 +195,75 @@
          </div>
        </section>
 
+    </div>
+  </section>
+  <!--esta seccion se ocultara con jquery y aparecera una vez el usuario se loguee-->
+  <section id="second">
+    <nav class="navbar navbar-default navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="glyphicon glyphicon-home" href="#" id="home-icon"></span>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Quienes somos<span class="sr-only">(current)</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#" id="btnSalir">Salir</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <!-- cuerpo de la seccion-->
+    <div class="row" id="option-second-section">
+      <div class="col-md-2 col-md-offset-2">
+        <a href=""> Mis envios <span class="glyphicon glyphicon-inbox"></span></a>
+      </div>
+      <div class="col-md-2">
+        <a href="">Nuevo <span class="glyphicon glyphicon-plane"></span></a>
+      </div>
+      <div class="col-md-2">
+        <a href="">Proceso <span class="glyphicon glyphicon-hourglass"></span></a>
+      </div>
+      <div class="col-md-4">
+        <input type="busqueda">
+      </div>
+    </div>
+     <!-- selection parte of secod section-->
+    <div class="row" id="option-second-section">
+     <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-5.jpg"></a>
+      </div>
+      <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-1.jpg"></a>
+      </div>
+      <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-5.jpg"></a>
+      </div>
+    </div>
+    <div class="row" id="option-2">
+      <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-1.jpg"></a>
+      </div>
+      <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-5.jpg"></a>
+      </div>
+      <div class="col-md-4">
+        <a href=""><img src="assets/img/selection-1.jpg"></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/js/app.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

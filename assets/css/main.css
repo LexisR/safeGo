@@ -54,6 +54,35 @@
   margin-bottom: 1em
 }
 
+/* Estos son los estilos de la second-section*/
+
+#second-section {
+  background-color: rgb(232, 223, 223);
+}
+
+#home-icon {
+  color: rgb(238, 250, 5);
+  margin-top: 19px;
+  margin-right: 10px;
+}
+
+a {
+  color: #000;
+}
+
+#option-second-section {
+  margin-top: 3em;
+}
+
+#option-2{
+  margin-top: 3em;
+}
+
+#icon-looking {
+  color: rgb(238, 250, 5);
+}
+
+/* Aca terminan los estilos de la second-section*/
 
 .picture-2{
 background-image: url(../../assets/img/img-3.jpg);
