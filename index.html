@@ -23,7 +23,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -285,6 +284,219 @@
               </div>
             </div>
           </footer>
+        </div>
+        <!-- creando modal para log in-->
+        <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content fondo">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <i class="fa fa-user-circle-o user" aria-hidden="true"></i>
+              </div>
+              <div class="modal-body">
+              <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                <input type="email" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2" id="txtEmail2">
+              </div>
+              <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2" id="txtPassword2">
+              </div>
+              <button type="button" class="btn btn-action enviar btn-2" id="btnLogin2">Ingresar</button>
+              <p class="forgot">Forgot password? <span class="click">Click Here</span></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--creando modal para contacto-->
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Contáctanos</h2> <i class="fa fa-truck" aria-hidden="true"></i>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label class="input-contacto" for="exampleInputEmail1">Nombre:</label>
+                      <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                    <label class="input-contacto" for="exampleInputEmail1">Correo Electrónico:</label>
+                    <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                    <label class="input-contacto" for="exampleInputEmail1">Teléfono:</label>
+                    <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                  </div>
+                  <textarea class="form-control input-contacto" rows="3" placeholder="Mensaje:"></textarea>
+                </div>
+                <button type="button" class="btn btn-registar">ENVIAR</button>
+                <h4 class="contacto-2">¡Nos pondremos en contácto contigo!</h4>
+              </div>
+            <form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--esta seccion se ocultara con jquery y aparecera una vez el usuario seleccione el tipo de envio-->
+  <section id="thirdSection">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" id="navThirdSection">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" id="home">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Nuevo envio<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button href="#" type="button" id="btnVolver" class="glyphicon glyphicon-chevron-left">Volver</button></li>
+            <li><button href="#" id="btnSalir">Salir</button></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="usuario">Usuario<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Configuracion</a></li>
+                <li><a href="#">Reclamos</a></li>
+                <li><a href="#">Perfil</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="modal-body text-center">
+          <p class="text-cuenta">Pasos para solicitar una cotizacion ó empezar una subasta </p>
+          <div class="input-group input-text">
+              <input type="text" class="form-control " placeholder="Nombre y Apellido" aria-describedby="sizing-addon2">
+            </div>
+          <div class="input-group input-text">
+            <input type="text" class="form-control " placeholder="Direccion de envio" aria-describedby="sizing-addon2">
+          </div>
+          <div class="input-group input-text">
+            <input type="text" class="form-control " placeholder="Direccion de recepcion" aria-describedby="sizing-addon2">
+          </div>
+          <div class="input-group input-text">
+            <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
+          </div>
+          <div class="input-group input-text">
+            <input type="text" class="form-control" placeholder="Si va a subastar colocque el monto aca" aria-describedby="sizing-addon2">
+          </div>
+          <div class="input-group input-text">
+            <input type="text" class="form-control " placeholder="Foto del envio" aria-describedby="sizing-addon2">
+            <input type="file" id="exampleInputFile">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs6 col-sm-6">
+           <button type="button" class="btn btn-primary enviar" id="btnSubasta">Empezar subasta</button>
+          </div>
+          <div class="col-xs6 col-sm-6">
+            <button type="button" class="btn btn-primary enviar" id="btnPresupuesto">Solicitar presupuesto</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+              <div id="contentMsj">
+                <div id="contentMsj" class="date"></div>
+              </div>
+            <input type="text" id="msjEnviado" oninput="contar()" autocomplete="off">
+            <button id="btnEnviarComentario" onclick="twittear()">Enviar comentario <span id="iconChat"class="glyphicon glyphicon-comment"></span></button>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button id="btnEnviarPuntuacion">Enviar puntuacion <span id="iconStar" class="glyphicon glyphicon-star"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--esta seccion se ocultara con jquery y aparecera una vez el usuario se loguee-->
+  <section id="second">
+    <nav class="navbar navbar-default navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="glyphicon glyphicon-home" href="#" id="home-icon"></span>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Quienes somos<span class="sr-only">(current)</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#contacto">Contacto</a></li>
+          <li><a href="#" id="btnSalir2">Salir</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <!-- cuerpo de la seccion-->
+    <div class="row" id="option-second-section">
+      <div class="col-xs-4  col-md-2">
+        <button class="btnSecondPart"> Mis envios <span class="glyphicon glyphicon-inbox"></span></button>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <button class="btnSecondPart">Nuevo envio<span class="glyphicon glyphicon-plane"></span></button>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <button class="btnSecondPart">Envios en proceso <span class="glyphicon glyphicon-hourglass"></span></button>
+      </div>
+      <div class="col-xs-2 col-md-6 visible-md visible-lg">
+        <div class="row">
+          <span class="col-xs-4 col-md-4  glyphicon glyphicon-bell"> Notificaciones 4</span>
+          <span class="col-xs-4 col-md-4 glyphicon glyphicon-envelope"> Mensajes  1</span>
+          <span class="col-xs-4 col-md-4 glyphicon glyphicon-comment"> Comentarios</span>
+        </div>
+      </div>
+    </div>
+     <!-- selection parte of secod section-->
+    <div class="row" id="option-second-section">
+     <div class="col-md-4 imgSecondPartOne">
+        <span><img src="assets/img/selection-1.jpg" class=" imgSecondPart"></span>
+        <div>
+          <button id="hacerUnEnvio" type="button"> Mudanzas<button>
+        </div>    
+      </div>
+      <div class="col-md-4 imgSecondPart">
+        <span><img src="assets/img/selection-2.jpg"></span>
+        <div>
+          <button type="button" class="btnEnvio"> Mascotas<button>
+        </div>    
+      </div>
+      <div class="col-md-4 imgSecondPart">
+        <span><img src="assets/img/selection-3.jpg"></span>
+        <div>
+          <button type="button" class="btnEnvio">Vehiculos<button>
+        </div>    
+      </div>
+    </div>
+    <div class="row" id="option-2"></div>
+      <div class="col-md-4 imgSecondPart"> 
+        <span><img src="assets/img/selection-4.jpg"></span>
+        <div>
+          <button type="button" class="btnEnvio">Electrodomesticos<button>
+        </div>    
+      </div>
+      <div class="col-md-4 imgSecondPart">
+        <span><img src="assets/img/selection-5.jpg"></span>
+        <div>
+          <button type="button" class="btnEnvio">Maquinaria button>
+        </div>    
+      </div>
+      <div class="col-md-4 imgSecondPart">
+        <span><img src="assets/img/selection-6.jpg"></span>
+        <div>
+          <button type="button" class="btnEnvio">Otros<button>
+        </div>    
+      </div>
+    </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/js/app.js"></script>

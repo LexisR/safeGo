@@ -66,10 +66,47 @@
   margin-right: 10px;
 }
 
-a {
-  color: #000;
+#hacerUnEnvio {
+  color: #fff;
+  background-color: #000;
 }
 
+.btnEnvio {
+  color: #fff;
+  background-color: #000;
+}
+
+#navThirdSection {
+  background-color: #000;
+}
+
+#btnVolver {
+  background-color: yellow;
+  color: #000;
+  margin-right : 11px;
+  height: 3em;
+  width: 6em;
+}
+
+#contentMsj {
+
+  overflow-y: scroll
+}
+
+#btnSalir {
+  background-color: yellow;
+  color: #000;
+  height: 3em;
+  width: 6em;
+}
+
+#usuario {
+  color: yellow;
+}
+
+#home {
+  color: yellow;
+}
 #option-second-section {
   margin-top: 3em;
 }
@@ -78,32 +115,84 @@ a {
   margin-top: 3em;
 }
 
-#icon-looking {
-  color: rgb(238, 250, 5);
+
+#inputSecondPart {
+  height: 27px;
+  width: 19em;
+  border-radius: 4px;
+}  
+
+.imgSecondPartOne {
+  padding-left: 47px;
+}
+
+.btnSecondPart {
+ background-color: #000;;
+ color: yellow;
 }
 
 /* Aca terminan los estilos de la second-section*/
 
-.picture-2{
-background-image: url(../../assets/img/img-3.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-height: 40em;
+/*Aca empieza los estilos de seccion tipo de envio */
+
+#iconStar {
+  color: yellow;
 }
-.fondo{
+
+#iconChat {
+  color: yellow;
+}
+
+#btnEnviarComentario {
+color: #fff;
+background-color: #000;
+}
+
+#btnEnviarPuntuacion {
+  color: #fff;
+  background-color: #000;
+}
+
+#btnSubasta {
+  color: #fff;
+  background-color: #000;
+}
+
+#btnPresupuesto {
+  color: #fff;
+  background-color: #000;
+}
+
+#msjEnviado {
+  width: 20em;
+  height: 2em;
+}
+/* Aca terminan los estilos de seccion tipo de envio */
+
+.picture-2 {
+  background-image: url(../../assets/img/img-3.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40em;
+}
+
+.fondo {
   background-color: #D3D3D3;
 }
-.user-datos{
+
+.user-datos {
  width: 30em;
  margin-left: 6em;
  margin-top: 0.5em;
 }
-.user{
+
+.user {
   color: #3CB371;
   font-size:12em;
   margin-left: 1.1em;
 }
-.btn-presionar{
+
+.btn-presionar {
   color:white;
   background-color: black;
   width: 30em;
@@ -111,7 +200,8 @@ height: 40em;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-.btn-registar{
+
+.btn-registar {
   color:white;
   background-color: black;
   width: 30em;
@@ -119,31 +209,38 @@ height: 40em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.forgot{
+
+.forgot {
   text-align: center;
   margin-top: 1em;
 }
-.click{
+
+.click {
   color: red;
 }
-.input-text{
+
+.input-text {
   width: 30em;
   margin-left: 6em;
   margin-top: 0.5em;
 }
-.fa-truck{
+
+.fa-truck {
   font-size: 6em;
   margin-left: 5em;
 }
-.input-contacto{
+
+.input-contacto {
   width: 30em;
   margin-left: 6em;
 }
-.modal-title{
+
+.modal-title {
   margin-top: 1em;
   margin-left: 1em;
 }
-.contacto-2{
+
+.contacto-2 {
   text-align: center;
   margin-bottom: 1em;
 
