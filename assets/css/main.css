@@ -148,3 +148,30 @@ height: 40em;
   margin-bottom: 1em;
 
 }
+.bajada{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 3em;
+}
+.final{
+  margin-top: 0.8em;
+}
+.text-quienessomos{
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.line-footer{
+  padding-top: 3em;
+}
+.btn-action{
+  color:white;
+  background-color: black;
+  width: 30em;
+  margin-left: 7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

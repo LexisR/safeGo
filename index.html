@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#quienes-somos">¿Quiénes somos?</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Seguimiento de envío</a></li>
@@ -37,223 +37,254 @@
             <li><a href="#" data-toggle="modal" data-target="#contacto">Contacto</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-  </header>
-  <!-- creando seccion cuerpo-->
-  <section class="section-principal">
-    <div class="container-fluid modal-1">
-      <div class="row div-imagen">
-        <div class="col-md-6 picture-1">
-          <p>
-            <button type="button" class="btn btn-primary btn-principal" data-toggle="modal" data-target="#registrar" type="submit">Quiero hacer un envio</button>
-          </p>
-        </div>
-        <!--creando modal registrar para hacer envios-->
-        <div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <!-- creando modal para log in-->
+        <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header linea-header">
+            <div class="modal-content fondo">
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <i class="fa fa-user-circle-o user" aria-hidden="true"></i>
               </div>
-              <div class="modal-body text-center">
-                <button type="button" class="btn btn-primary btn-1  cuenta" >¿Ya tienes una cuenta?</button>
-                <p class="text-cuenta">¡Registrate y despreocupate de tus envios!</p>
-                <img src="assets/img/safe.png" id="img-logo">
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
+              <div class="modal-body">
+                <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
                 </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
+
+                <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control " placeholder="Password" aria-describedby="sizing-addon2">
                 </div>
-                <div class="input-group input-text">
-                  <input type="email" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2" id="txtEmail">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="password" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2" id="txtPassword">
-                </div>
-                <div class="input-group input-text" >
-                  <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
-                </div>
+
+                <button type="button" class="btn btn-presionar">LOGING</button>
+                <p class="forgot">Forgot password? <span class="click">Click Here</span></p>
               </div>
-              <button type="button" class="btn btn-action enviar btn-2" id="btnSignUp">Registrame</button>
-              <button type="button" class="btn btn-action enviar btn-2" id="btnLogin">Ingresar</button>
+
             </div>
           </div>
-        </div>
-        <div class="col-md-6 picture-2">
-          <p>
-            <button type="button" class="btn btn-primary btn-principal btn-3" data-toggle="modal" data-target="#registrarConductor" type="submit">Quiero ser conductor</button>
-          </p>
-        </div>
-        <!--creando modal registrar para ser conductor-->
-        <div class="modal fade" id="registrarConductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content registrar-1">
-              <div class="modal-header linea-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body ">
-                <button type="button" class="btn btn-presionar">¿Ya tienes una cuenta?</button>
-                <p class="text-cuenta text-center">¡Registrate y se parte de una gran empres!</p>
-                <img src="assets/img/safe.png" id="img-logo">
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
-                </div>
-                <div class="input-group input-text">
-                  <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
-                </div>
-              </div>
-              <button type="button" class="btn btn-registar">ENVIAR</button>
-            </div>
           </div>
-        </div>
-      </div>
 
-       <!-- creando modal para log in-->
-       <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog" role="document">
-           <div class="modal-content fondo">
-             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <i class="fa fa-user-circle-o user" aria-hidden="true"></i>
-             </div>
-             <div class="modal-body">
-               <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                 <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
-               </div>
-
-               <div class="input-group user-datos"><span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                 <input type="text" class="form-control " placeholder="Password" aria-describedby="sizing-addon2">
-               </div>
-
-               <button type="button" class="btn btn-presionar">LOGING</button>
-               <p class="forgot">Forgot password? <span class="click">Click Here</span></p>
-             </div>
-
-           </div>
-         </div>
-         </div>
-
-           <!--creando modal para contacto-->
-           <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-             <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                 <div class="modal-header">
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                   <h2 class="modal-title" id="myModalLabel">Contáctanos</h2> <i class="fa fa-truck" aria-hidden="true"></i>
-                 </div>
-                 <div class="modal-body">
-                   <form>
-                     <div class="form-group">
-                       <label class="input-contacto" for="exampleInputEmail1">Nombre:</label>
-                       <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+            <!--creando modal para contacto-->
+            <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Contáctanos</h2> <i class="fa fa-truck" aria-hidden="true"></i>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label class="input-contacto" for="exampleInputEmail1">Nombre:</label>
+                        <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
 
 
-                     <label class="input-contacto" for="exampleInputEmail1">Correo Electrónico:</label>
-                     <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                      <label class="input-contacto" for="exampleInputEmail1">Correo Electrónico:</label>
+                      <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
 
-                     <label class="input-contacto" for="exampleInputEmail1">Teléfono:</label>
-                     <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
-                   </div>
+                      <label class="input-contacto" for="exampleInputEmail1">Teléfono:</label>
+                      <input type="email" class="form-control input-contacto" id="exampleInputEmail1">
+                    </div>
 
-                   <textarea class="form-control input-contacto" rows="3" placeholder="Mensaje:"></textarea>
-                   </div>
+                    <textarea class="form-control input-contacto" rows="3" placeholder="Mensaje:"></textarea>
+                    </div>
 
-                 <button type="button" class="btn btn-registar">ENVIAR</button>
+                  <button type="button" class="btn btn-registar">ENVIAR</button>
 
-                 <h4 class="contacto-2">¡Nos pondremos en contácto contigo!</h4>
-                 </div>
-                 <form>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </section>
+                  <h4 class="contacto-2">¡Nos pondremos en contácto contigo!</h4>
+                  </div>
+                  <form>
+                  </div>
+                </div>
 
-    </div>
-  </section>
-  <!--esta seccion se ocultara con jquery y aparecera una vez el usuario se loguee-->
-  <section id="second">
-    <nav class="navbar navbar-default navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="glyphicon glyphicon-home" href="#" id="home-icon"></span>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Quienes somos<span class="sr-only">(current)</span></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#" id="btnSalir">Salir</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-    </nav>
-    <!-- cuerpo de la seccion-->
-    <div class="row" id="option-second-section">
-      <div class="col-md-2 col-md-offset-2">
-        <a href=""> Mis envios <span class="glyphicon glyphicon-inbox"></span></a>
-      </div>
-      <div class="col-md-2">
-        <a href="">Nuevo <span class="glyphicon glyphicon-plane"></span></a>
-      </div>
-      <div class="col-md-2">
-        <a href="">Proceso <span class="glyphicon glyphicon-hourglass"></span></a>
-      </div>
-      <div class="col-md-4">
-        <input type="busqueda">
-      </div>
-    </div>
-     <!-- selection parte of secod section-->
-    <div class="row" id="option-second-section">
-     <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-5.jpg"></a>
-      </div>
-      <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-1.jpg"></a>
-      </div>
-      <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-5.jpg"></a>
-      </div>
-    </div>
-    <div class="row" id="option-2">
-      <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-1.jpg"></a>
-      </div>
-      <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-5.jpg"></a>
-      </div>
-      <div class="col-md-4">
-        <a href=""><img src="assets/img/selection-1.jpg"></a>
-      </div>
-    </div>
-  </section>
+                <!--creando modal para quienes somos-->
+                <div class="modal fade" id="quienes-somos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title" id="myModalLabel">¿Quiénes somos?</h2>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-quienessomos">Safe Go. Somos una empresa dedicada al servicio de mudanzas a lo largo de Chile desde Arica a Punta Arenas y al transporte de carga en general, cubriendo el territorio nacional y los países del Mercosur.
+                          Brindamos un servicio de calidad, con compromiso, responsabilidad y seguridad, lo que nos ha valido el reconocimiento y fidelidad de una importante cartera de clientes.
+                          Nuestra trayectoria y posicionamiento hacen de Safe Go una compañía ineludible al momento de requerir sus servicios.</p>
+                          <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="modal-footer line-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.container-fluid -->
+              </nav>
+            </header>
+            <!-- creando seccion cuerpo-->
+            <section class="section-principal">
+              <div class="container-fluid modal-1">
+                <div class="row div-imagen">
+                  <div class="col-md-6 picture-1">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-principal" data-toggle="modal" data-target="#registrar" type="submit">Quiero hacer un envio</button>
+                    </p>
+                  </div>
+                  <!--creando modal registrar para hacer envios-->
+                  <div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header linea-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <button type="button" class="btn btn-presionar" >¿Ya tienes una cuenta?</button>
+                          <p class="text-cuenta text-center">¡Registrate y despreocupate de tus envios!</p>
+                          <img src="assets/img/safe.png" id="img-logo">
+                          <div class="input-group input-text">
+                            <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
+                          </div>
+                          <div class="input-group input-text">
+                            <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
+                          </div>
+                          <div class="input-group input-text">
+                            <input type="email" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2" id="txtEmail">
+                          </div>
+                          <div class="input-group input-text">
+                            <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
+                          </div>
+                          <div class="input-group input-text">
+                            <input type="password" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2" id="txtPassword">
+                          </div>
+                          <div class="input-group input-text" >
+                            <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-action enviar btn-2" id="btnSignUp">Registrame</button>
+                        <button type="button" class="btn btn-action enviar btn-2" id="btnLogin">Ingresar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 picture-2">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-principal btn-3" data-toggle="modal" data-target="#registrarConductor" type="submit">Quiero ser conductor</button>
+                    </p>
+                  </div>
+
+                  <!--creando modal registrar para ser conductor-->
+                  <div class="modal fade" id="registrarConductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header linea-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body ">
+                            <button type="button" class="btn btn-presionar">¿Ya tienes una cuenta?</button>
+                            <p class="text-cuenta text-center">¡Registrate y se parte de una gran empres!</p>
+                            <img src="assets/img/safe.png" id="img-logo">
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control " placeholder="Nombre" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control " placeholder="Apellido" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control " placeholder="Correo electronico" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control input-cuenta" placeholder="Telefono" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="input-group input-text">
+                              <input type="text" class="form-control " placeholder="Ciudad" aria-describedby="sizing-addon2">
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-registar">ENVIAR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--esta seccion se ocultara con jquery y aparecera una vez el usuario se loguee-->
+          <section id="second">
+            <nav class="navbar navbar-default navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <span class="glyphicon glyphicon-home" href="#" id="home-icon"></span>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Quienes somos<span class="sr-only">(current)</span></a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" id="btnSalir">Salir</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <!-- cuerpo de la seccion-->
+            <div class="row" id="option-second-section">
+              <div class="col-md-2 col-md-offset-2">
+                <a href=""> Mis envios <span class="glyphicon glyphicon-inbox"></span></a>
+              </div>
+              <div class="col-md-2">
+                <a href="">Nuevo <span class="glyphicon glyphicon-plane"></span></a>
+              </div>
+              <div class="col-md-2">
+                <a href="">Proceso <span class="glyphicon glyphicon-hourglass"></span></a>
+              </div>
+              <div class="col-md-4">
+                <input type="busqueda">
+              </div>
+            </div>
+            <!-- selection parte of secod section-->
+            <div class="row" id="option-second-section">
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-5.jpg"></a>
+              </div>
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-1.jpg"></a>
+              </div>
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-5.jpg"></a>
+              </div>
+            </div>
+            <div class="row" id="option-2">
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-1.jpg"></a>
+              </div>
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-5.jpg"></a>
+              </div>
+              <div class="col-md-4">
+                <a href=""><img src="assets/img/selection-1.jpg"></a>
+              </div>
+            </div>
+          </section>
+
+          <!--creando footer-->
+
+          <footer class="bajada">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <p class="final">Copyright © Your Website 2017</p>
+                </div>
+              </div>
+            </div>
+          </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/js/app.js"></script>
